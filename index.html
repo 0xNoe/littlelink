@@ -1,72 +1,67 @@
-  <!-- 
-    
-  Version 2.5.0 
-  
-  This is to help you track what version of LittleLink you forked.
-
-  -->
-  
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <!-- Page Information
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Noé Giglio</title>
-  <meta name="description" content="Noé Giglio, Investor and Growth in the web3 industry since 2019. Currently working at White Loop Capital, Usual Labs and Straylight.">
+  <meta charset="UTF-8" />
+  <!-- viewport-fit=cover enables safe-area-inset support for notched devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Noé Giglio — Institutional Partnerships & Digital Assets</title>
+  <meta name="description" content="Noé Giglio builds institutional partnerships at the intersection of finance and digital assets across European markets. Based in London, leading partnerships at The Big Whale." />
   <meta name="author" content="Noé Giglio">
-  <link rel="canonical" href="https://noegiglio.com">
-  <meta property="og:title" content="Noé Giglio">
-  <meta property="og:description" content="Noé Giglio, Investor and Growth in the web3 industry since 2019. Currently working at White Loop Capital, Usual Labs and Straylight.">
-  <meta property="og:image" content="https://noegiglio.com/images/noe.webp">
-  <meta property="og:url" content="https://noegiglio.com">
-  <meta name="twitter:card" content="summary_large_image">
 
-  
-  <!-- Schema.org metadata
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Theme color: tints iOS Safari chrome to match the dark nav -->
+  <meta name="theme-color" content="#1a1917" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://noegiglio.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- apple-touch-icon: replace with a 180×180 PNG for best iOS result -->
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="images/portrait.webp" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://noegiglio.com/" />
+  <meta property="og:title" content="Noé Giglio — Institutional Partnerships & Digital Assets" />
+  <meta property="og:description" content="Building partnerships at the intersection of institutional finance and digital assets across European markets." />
+  <meta property="og:image" content="https://noegiglio.com/images/portrait.webp" />
+  <meta property="og:site_name" content="Noé Giglio" />
+  <meta property="og:locale" content="en_GB" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@noegiglio" />
+  <meta name="twitter:creator" content="@noegiglio" />
+  <meta name="twitter:title" content="Noé Giglio — Institutional Partnerships & Digital Assets" />
+  <meta name="twitter:description" content="Building partnerships at the intersection of institutional finance and digital assets across European markets." />
+  <meta name="twitter:image" content="https://noegiglio.com/images/portrait.webp" />
+
+  <!-- Schema.org Person -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Noé Giglio",
-      "alternateName": "0xNoe",
-      "jobTitle": "Venture Capitalist and Business Developer",
-      "url": "https://noegiglio.com",
-      "image": "https://noegiglio.com/images/noe.webp",
-      "sameAs": [
-        "https://www.linkedin.com/in/noe-giglio/",
-        "https://telegram.me/Noe_ETH",
-        "https://x.com/0xNoe"
-      ],
-      "description": "Investor and Growth in the web3 industry since 2019. Currently working at White Loop Capital, Usual Labs and Straylight.",
-      "worksFor": [
-        {
-          "@type": "Organization",
-          "name": "White Loop Capital",
-          "url": "https://whiteloop.capital/"
-        },
-        {
-          "@type": "Organization",
-          "name": "Straylight",
-          "url": "https://straylight.fund/"
-        }
-      ],
-      "knowsAbout": [
-        "Venture Capital",
-        "Web3",
-        "Business Development",
-        "Blockchain",
-        "Operations"
-      ]
-    }
-    </script>
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Noé Giglio",
+    "jobTitle": "Institutional Partnerships",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "The Big Whale",
+      "url": "https://www.thebigwhale.io/"
+    },
+    "url": "https://noegiglio.com",
+    "knowsAbout": ["Digital Assets", "Institutional Finance", "Strategic Partnerships", "Crypto Markets", "Market Intelligence"],
+    "sameAs": [
+      "https://www.linkedin.com/in/noegiglio/",
+      "https://x.com/stablenoe",
+      "https://www.crunchbase.com/person/no%C3%A9-giglio"
+    ]
+  }
+  </script>
 
-
-  <!-- Google tag (gtag.js)
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7S5TEVXS2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -75,125 +70,519 @@
     gtag('config', 'G-Q7S5TEVXS2');
   </script>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* ── Reset & base ─────────────────────────────────────── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      /* Remove iOS tap flash on all elements */
+      -webkit-tap-highlight-color: transparent;
+    }
 
+    :root {
+      --bg:          #f7f5f2;
+      --bg-white:    #ffffff;
+      --nav:         #1a1917;
+      --text:        #1a1917;
+      --text-muted:  #8c8278;
+      --border:      #e0dbd4;
+      --pill-border: #4a4743;
+      --nav-h:       52px;
+    }
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
+    html { scroll-behavior: smooth; }
 
-    <!-- Themes:
-            Auto:   css/skeleton-auto.css
-            Light:  css/skeleton-light.css
-            Dark:   css/skeleton-dark.css
-     -->
-    <link rel="stylesheet" href="css/skeleton-dark.css">
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      background-color: var(--bg-white);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      /* Prevent any element from causing horizontal scroll */
+      overflow-x: hidden;
+    }
 
-    <!-- Brand Styles -->
-    <link rel="stylesheet" href="css/brands.css">
+    /* Eliminate 300ms tap delay on all interactive elements */
+    a, button {
+      touch-action: manipulation;
+    }
 
+    /* ── Focus styles (keyboard / switch access) ──────────── */
+    :focus-visible {
+      outline: 2px solid var(--text-muted);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/x-icon" href="logo.ico">
+    /* High-contrast focus on the dark nav */
+    .nav :focus-visible {
+      outline-color: #c8c2bb;
+    }
 
+    /* ── Navigation ───────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: var(--nav);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--nav-h);
+      /* Horizontal padding respects safe area on notched devices */
+      padding-left:  max(48px, calc(24px + env(safe-area-inset-left)));
+      padding-right: max(48px, calc(24px + env(safe-area-inset-right)));
+    }
+
+    .nav__name {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #c8c2bb;
+      text-decoration: none;
+      /* Fill full nav height = 52px touch target */
+      display: inline-flex;
+      align-items: center;
+      height: var(--nav-h);
+    }
+
+    .nav__connect {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #c8c2bb;
+      text-decoration: none;
+      border: 1px solid var(--pill-border);
+      border-radius: 20px;
+      /* Vertical padding expands touch target to ~40px */
+      padding: 10px 16px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    /* ── Hero ─────────────────────────────────────────────── */
+    .hero {
+      display: flex;
+      /* 100svh = visible viewport height, excludes Safari browser chrome.
+         Falls back to 100vh on older browsers. */
+      min-height: 100vh;
+      min-height: 100svh;
+      padding-top: var(--nav-h);
+    }
+
+    .hero__photo {
+      position: relative;
+      width: 420px;
+      flex-shrink: 0;
+      background-color: #c9b89e;
+      overflow: hidden;
+    }
+
+    /* Warm hover overlay — pointer devices only (not touch) */
+    .hero__photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(180, 130, 70, 0.06);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+
+    .hero__photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .hero__content {
+      flex: 1;
+      background-color: var(--bg);
+      display: flex;
+      align-items: center;
+      padding: 64px 72px;
+    }
+
+    .hero__inner {
+      max-width: 603px;
+    }
+
+    .hero__name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(52px, 5vw, 78px);
+      line-height: 1.02;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: 24px;
+    }
+
+    .hero__tagline {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      line-height: 2;
+      margin-bottom: 28px;
+      /* Safety net: long uppercase strings can overflow on narrow screens */
+      overflow-wrap: break-word;
+    }
+
+    .hero__bio {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text);
+      margin-bottom: 32px;
+      overflow-wrap: break-word;
+    }
+
+    /* Inline contextual link (The Big Whale in bio) */
+    .bio-link {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .hero__socials {
+      display: flex;
+      align-items: center;
+    }
+
+    .hero__socials a {
+      position: relative;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    /* Expand touch target via pseudo-element (invisible, no layout impact) */
+    .hero__socials a::before {
+      content: '';
+      position: absolute;
+      top: -14px;
+      bottom: -14px;
+      left: -8px;
+      right: -8px;
+    }
+
+    .hero__dot {
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: var(--border);
+      margin: 0 12px;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+      /* Dots are decorative, not interactive — no pointer needed */
+      pointer-events: none;
+    }
+
+    .section-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    /* ── Connect ──────────────────────────────────────────── */
+    .connect {
+      background-color: var(--bg);
+      border-top: 1px solid var(--border);
+      padding: 72px 48px 56px;
+      /* Grow bottom padding to clear the home indicator on iPhone */
+      padding-bottom: max(56px, calc(40px + env(safe-area-inset-bottom)));
+      text-align: center;
+      scroll-margin-top: var(--nav-h);
+    }
+
+    .connect__inner {
+      max-width: min(520px, 100%);
+      margin: 0 auto;
+    }
+
+    .connect__email {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+      transition: border-color 0.2s, color 0.2s;
+      margin-bottom: 40px;
+      /* Prevent email address overflowing on narrow screens */
+      max-width: 100%;
+      word-break: break-all;
+    }
+
+    .connect__socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 64px;
+    }
+
+    .connect__socials a {
+      position: relative;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    /* Expand touch target (same technique as hero socials) */
+    .connect__socials a::before {
+      content: '';
+      position: absolute;
+      top: -14px;
+      bottom: -14px;
+      left: -8px;
+      right: -8px;
+    }
+
+    .connect__copyright {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      color: #cbc6c0;
+    }
+
+    /* ── Hover: pointer devices only ─────────────────────── */
+    /* Prevents hover states sticking after tap on touchscreens  */
+    @media (hover: hover) and (pointer: fine) {
+      .nav__connect:hover {
+        color: #f7f5f2;
+        border-color: #8c8278;
+      }
+      .hero__photo:hover::after {
+        opacity: 1;
+      }
+      .hero__socials a:hover { color: var(--text); }
+      .bio-link:hover {
+        color: var(--text-muted);
+        border-color: var(--text-muted);
+      }
+      .connect__email:hover {
+        color: var(--text-muted);
+        border-color: var(--text-muted);
+      }
+      .connect__socials a:hover { color: var(--text); }
+    }
+
+    /* Active states replace hover feedback on touch */
+    .nav__connect:active          { color: #f7f5f2; border-color: #8c8278; }
+    .hero__socials a:active       { color: var(--text); }
+    .bio-link:active              { color: var(--text-muted); }
+    .connect__email:active        { color: var(--text-muted); }
+    .connect__socials a:active    { color: var(--text); }
+
+    /* ── Responsive ───────────────────────────────────────── */
+
+    /* Medium desktop: slight padding reduction */
+    @media (max-width: 1100px) {
+      .hero__content { padding: 56px 56px; }
+    }
+
+    /* Stack layout: tablets and all phones (≤ 900px).
+       At widths between 421–900px the side-by-side layout is too cramped
+       because the 420px photo column consumes most of the viewport. */
+    @media (max-width: 900px) {
+      .nav {
+        /* Tighter horizontal padding on tablet/mobile */
+        padding-left:  max(24px, calc(16px + env(safe-area-inset-left)));
+        padding-right: max(24px, calc(16px + env(safe-area-inset-right)));
+      }
+
+      .hero {
+        flex-direction: column;
+        min-height: auto;
+      }
+
+      .hero__photo {
+        width: 100%;
+        /* 72vw gives enough vertical space to see face + shoulders clearly.
+           Taller than the previous 56vw which cut the subject too tightly. */
+        height: 72vw;
+        /* 900px viewport cap: don't let it become taller than a portrait image */
+        max-height: 520px;
+        flex-shrink: 0;
+      }
+
+      .hero__content {
+        padding: 48px 40px 64px;
+        align-items: flex-start;
+      }
+
+      .hero__inner {
+        max-width: 100%;
+      }
+
+      .hero__name {
+        font-size: clamp(48px, 8vw, 72px);
+      }
+
+      /* Bump small text to 11px minimum on mobile for legibility */
+      .hero__tagline    { font-size: 11px; letter-spacing: 0.12em; }
+      .section-label    { font-size: 11px; }
+      .connect__copyright { font-size: 11px; }
+      .nav__name        { font-size: 11px; }
+      .nav__connect     { font-size: 11px; }
+
+      .connect {
+        padding: 60px 40px;
+        padding-bottom: max(48px, calc(36px + env(safe-area-inset-bottom)));
+      }
+
+      .connect__socials { margin-bottom: 44px; }
+    }
+
+    /* Small phones (≤ 480px) */
+    @media (max-width: 480px) {
+      .hero__photo {
+        height: 78vw;
+        max-height: 380px;
+      }
+
+      .hero__content { padding: 40px 24px 56px; }
+
+      .hero__name { font-size: clamp(44px, 11vw, 60px); }
+
+      .connect {
+        padding: 52px 24px;
+        padding-bottom: max(44px, calc(32px + env(safe-area-inset-bottom)));
+      }
+
+      .connect__socials { margin-bottom: 36px; }
+    }
+
+    /* Very small phones (≤ 360px) */
+    @media (max-width: 360px) {
+      .nav {
+        padding-left:  max(16px, calc(12px + env(safe-area-inset-left)));
+        padding-right: max(16px, calc(12px + env(safe-area-inset-right)));
+      }
+
+      .hero__content { padding: 32px 20px 48px; }
+
+      .hero__name { font-size: 42px; }
+
+      .connect { padding: 44px 20px; padding-bottom: max(40px, calc(28px + env(safe-area-inset-bottom))); }
+    }
+
+    /* ── Reduced motion ───────────────────────────────────── */
+    @media (prefers-reduced-motion: reduce) {
+      /* Disable smooth scroll (causes vestibular issues) */
+      html { scroll-behavior: auto; }
+      /* Collapse all transitions and animations to near-zero */
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="column" style="margin-top: 10%">
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#" class="nav__name">Noé Giglio</a>
+    <a href="#connect" class="nav__connect">Connect</a>
+  </nav>
 
-        <!-- 
-
-          ## Getting Started with LittleLink
-
-          This page has been built with every pre-designed button available in LittleLink by default. You can rearrange and delete as needed.
-
-          You can add your own brand or others brands you may need in the `css/brands.css` file. 
-
-          You can add custom icons to `images/icons/...`. It is recommended to use a 24x24 .SVG.
-
-          Edit the "Your Image Here" section to add your own personal branding, like a picture of yourself or your brand logo!
-
-          Edit the "Title" section to change the page heading. You can use something like your name, your social handle, or your brand name.
-
-          Edit the "Short Bio" section tell users about yourself or your brand.
-
-        -->
-
-        <!-- Your Image Here -->
-        <img src="images/noe.webp" class="avatar" alt="Picture of Noé Giglio">
-
-        <!-- Title -->
-        <h1 role="heading">Noé Giglio</h1>
-
-        <!-- Short Bio -->
-        <p>Chief of Staff at TheBigWhale, Managing Partner at Straylight and White Loop Capital. Digital Assets since 2019.</p>
-
-        <!--
-
-          ## Breaking down <a> attributes:
-          
-          1.) class="button button-default" | The first "button" here is telling this <a> tag that it should make this element a button and applies the default styling in `css/brands.css`.
-          The second portion, button-default, is declaring the specific brand style you would like to apply. Here we're applying the "default" style and color.
-          If you want to make this button to use the brand colors for Discord, just change "button-default" to "button-discord". Brands are found in `css/brands.css`. You can always edit & add your own there.
-
-          2.) Replace the # in href="#" with the desired target URL for the button.
-
-          3.) target="_blank" | This attribute opens links in a new tab. Remove this attribute to prevent links from opening in a new tab.
-
-          4.) rel="noopener" | This attribute instructs the browser to navigate to the target resource without granting the new browsing context access to the document that opened it.
-          This is especially useful when opening untrusted links. https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/noopener
-
-          5.) role="button" | The button role identifies an element as a button to assistive technology such as screen readers.
-
-          ## Breaking down the <img> attributes:
-          
-          1.) class="icon" | This class is telling the <img> tag that it should use the styling for icons found in `css/brands.css`.
-
-          2.) src="images/icons/[icon-name].svg" | This defines the icon you would like to display from the 'images/icons/' folder. For example, you can change this to src="images/icons/discord.svg" to use the Discord icon.
-          Add your own 24x24 icons to the "icons" folder to reference them. We recommend providing a SVG.
-
-          3.) alt="" | Since the text at the end of the snippet, "..>[Button Text]</a><br>", explains what the button is, we use "alt=""" to nullify the icon annoucement from the accessibility tree. 
-          This can improve the experience for assistive technology users by hiding what is essentially duplicated
-
-        -->
-
-        <!-- TBW Website -->
-        <a class="button button-default" href="https://www.thebigwhale.io/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tbw.png" alt="The Big Whale Icon">The Big Whale</a><br>
-
-        <!-- Straylight Website -->
-        <a class="button button-x" href="https://straylight.fund" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/straylight.png" alt="Straylight Icon">Straylight</a><br>
-
-        <!-- WLC Website -->
-        <a class="button button-x" href="https://whiteloop.capital/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/wlc.svg" alt="White Loop Capital Icon">White Loop Capital</a><br>
-        
-        <!-- LinkedIn -->
-        <a class="button button-linked" href="https://www.linkedin.com/in/noe-giglio/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn</a><br>
-
-        <!-- Twitter -->
-        <a class="button button-x" href="https://x.com/StableNoe" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/x.svg" alt="Xcom Logo">Twitter</a><br>
-
-        <!-- Crunchbase Website -->
-        <a class="button button-default" href="https://www.crunchbase.com/person/no%C3%A9-giglio" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/crunchbase.svg" alt="Website Icon">Crunchbase</a><br>
-
-        <!-- Telegram
-        <a class="button button-x" href="https://telegram.me/Noe_ETH" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/telegram.svg" alt="Telegram Logo">Telegram</a><br>
-        <br> -->
-
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__photo">
+      <img
+        src="images/portrait.webp"
+        alt="Portrait of Noé Giglio"
+        width="420"
+        height="840"
+        fetchpriority="high"
+        loading="eager"
+      />
+    </div>
+    <div class="hero__content">
+      <div class="hero__inner">
+        <h1 class="hero__name">Noé<br>Giglio</h1>
+        <p class="hero__tagline">
+          Institutional Partnerships / Digital Assets<br>
+          Europe
+        </p>
+        <p class="hero__bio">
+          Noé Giglio operates at the intersection of institutional finance and digital assets. Based in London, he leads strategic partnerships and private events at <a href="https://www.thebigwhale.io/" class="bio-link" target="_blank" rel="noopener">The Big Whale</a>, Europe's leading market intelligence provider serving 150+ institutional clients. Rooted in the digital assets ecosystem since 2019, he has spent seven years building deep expertise across onchain finance and investment strategies, while developing a network spanning financial institutions, corporates, and digital asset firms across Europe's major financial hubs.
+        </p>
+        <div class="hero__socials">
+          <a href="https://www.linkedin.com/in/noegiglio/" target="_blank" rel="noopener me">LinkedIn</a>
+          <span class="hero__dot" aria-hidden="true"></span>
+          <a href="https://x.com/stablenoe" target="_blank" rel="noopener me">X</a>
+          <span class="hero__dot" aria-hidden="true"></span>
+          <a href="https://www.crunchbase.com/person/no%C3%A9-giglio" target="_blank" rel="noopener me">Crunchbase</a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Connect -->
+  <section class="connect" id="connect">
+    <div class="connect__inner">
+      <p class="section-label">Connect</p>
+      <a class="connect__email" id="email-link" href="#"></a>
+      <div class="connect__socials">
+        <a href="https://www.linkedin.com/in/noegiglio/" target="_blank" rel="noopener me">LinkedIn</a>
+        <span class="hero__dot" aria-hidden="true"></span>
+        <a href="https://x.com/stablenoe" target="_blank" rel="noopener me">X</a>
+        <span class="hero__dot" aria-hidden="true"></span>
+        <a href="https://www.crunchbase.com/person/no%C3%A9-giglio" target="_blank" rel="noopener me">Crunchbase</a>
+      </div>
+      <p class="connect__copyright">&copy; <span id="year"></span> Noé Giglio</p>
+    </div>
+  </section>
+
+  <!-- Email obfuscation + year -->
+  <script>
+    (function () {
+      var c = [110,111,101,64,116,104,101,98,105,103,119,104,97,108,101,46,105,111];
+      var e = c.map(function(n){ return String.fromCharCode(n); }).join('');
+      var el = document.getElementById('email-link');
+      el.href = 'mailto:' + e;
+      el.textContent = e;
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+
 </body>
-
 </html>

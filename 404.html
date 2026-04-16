@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Not Found — Noé Giglio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Inter:wght@300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      background-color: #f7f5f2;
+      color: #1a1917;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 48px 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .label {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8c8278;
+      margin-bottom: 24px;
+    }
+    .code {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(72px, 15vw, 120px);
+      line-height: 1;
+      color: #1a1917;
+      margin-bottom: 32px;
+    }
+    .back {
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      color: #8c8278;
+      text-decoration: none;
+      border-bottom: 1px solid #e0dbd4;
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .back:hover { color: #1a1917; border-color: #8c8278; }
+  </style>
+</head>
+<body>
+  <p class="label">Page not found</p>
+  <p class="code">404</p>
+  <a href="/" class="back">Back to noegiglio.com</a>
+</body>
+</html>
