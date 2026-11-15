@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 44" width="184" height="44" role="img" aria-label="Noé Giglio">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Signet box -->
+  <rect x="0" y="0" width="44" height="44" fill="#e8e2da"/>
+  <!-- Initial N -->
+  <text
+    x="22" y="30"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-weight="300"
+    font-size="27"
+    fill="#1a1917"
+    letter-spacing="0">N</text>
+  <!-- Name -->
+  <text
+    x="60" y="28"
+    dominant-baseline="auto"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-weight="300"
+    font-size="22"
+    fill="#e8e2da"
+    letter-spacing="1.4">Noé Giglio</text>
+</svg>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Options — Noé Giglio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f7f5f2;
+    --bg-white: #ffffff;
+    --nav: #1a1917;
+    --text: #1a1917;
+    --muted: #8c8278;
+    --border: #e0dbd4;
+    --pill: #4a4743;
+    --warm-tan: #c9b89e;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    padding: 60px 40px;
+  }
+
+  h2.page-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 56px;
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    padding: 56px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    min-height: 260px;
+    position: relative;
+  }
+
+  .card--dark {
+    background: var(--nav);
+  }
+
+  .card--full {
+    grid-column: 1 / -1;
+  }
+
+  .card__label {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .card--dark .card__label {
+    color: #4a4743;
+  }
+
+  /* ─── Option 1: Stacked Wordmark ─── */
+  .opt1 {
+    text-align: center;
+    line-height: 1;
+  }
+  .opt1__top {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 34px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--text);
+    display: block;
+    margin-bottom: 10px;
+  }
+  .opt1__rule {
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    background: var(--muted);
+    margin-bottom: 10px;
+  }
+  .opt1__bottom {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+  }
+
+  /* ─── Option 2: NG Monogram + Name ─── */
+  .opt2 {
+    text-align: center;
+  }
+  .opt2__monogram {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 58px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    line-height: 1;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .opt2__dot {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: var(--muted);
+    vertical-align: middle;
+    position: relative;
+    top: -4px;
+    margin: 0 2px;
+  }
+  .opt2__name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+  }
+
+  /* ─── Option 3: Signet + Name (light bg) ─── */
+  .opt3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .opt3__box {
+    width: 44px;
+    height: 44px;
+    background: var(--nav);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .opt3__initial {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 26px;
+    color: #e8e2da;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .opt3__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .opt3__name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0.06em;
+    color: var(--text);
+    line-height: 1;
+  }
+  .opt3__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 8px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ─── Option 3 dark variant ─── */
+  .opt3--dark .opt3__box {
+    background: #e8e2da;
+  }
+  .opt3--dark .opt3__initial {
+    color: var(--nav);
+  }
+  .opt3--dark .opt3__name {
+    color: #e8e2da;
+  }
+  .opt3--dark .opt3__subtitle {
+    color: #4a4743;
+  }
+
+  /* ─── Option 4: Serif Name Only ─── */
+  .opt4 {
+    text-align: center;
+  }
+  .opt4__name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 38px;
+    letter-spacing: 0.06em;
+    color: var(--text);
+    display: block;
+    margin-bottom: 12px;
+    line-height: 1;
+  }
+  .opt4__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 8px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+  }
+
+  /* ─── Option 5: Oval Seal ─── */
+  .opt5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .seal {
+    position: relative;
+    width: 160px;
+    height: 160px;
+  }
+  .seal svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ─── Divider ─── */
+  .section-label {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 40px 0 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .variants-row {
+    display: flex;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto 24px;
+  }
+  .variants-row .card {
+    flex: 1;
+    min-height: 200px;
+  }
+</style>
+</head>
+<body>
+
+<h2 class="page-title">Logo concepts — Noé Giglio</h2>
+
+<div class="grid">
+
+  <!-- Option 1 -->
+  <div class="card">
+    <span class="card__label">01 — Stacked Wordmark</span>
+    <div class="opt1">
+      <span class="opt1__top">Noé Giglio</span>
+      <span class="opt1__rule"></span>
+      <span class="opt1__bottom">Institutional Partnerships</span>
+    </div>
+  </div>
+
+  <!-- Option 2 -->
+  <div class="card">
+    <span class="card__label">02 — NG Monogram</span>
+    <div class="opt2">
+      <span class="opt2__monogram">N<span class="opt2__dot">·</span>G</span>
+      <span class="opt2__name">Noé Giglio</span>
+    </div>
+  </div>
+
+  <!-- Option 3 light -->
+  <div class="card">
+    <span class="card__label">03 — Signet + Name (light)</span>
+    <div class="opt3">
+      <div class="opt3__box">
+        <span class="opt3__initial">N</span>
+      </div>
+      <div class="opt3__text">
+        <span class="opt3__name">Noé Giglio</span>
+        <span class="opt3__subtitle">Institutional Partnerships & Digital Assets</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option 3 dark -->
+  <div class="card card--dark">
+    <span class="card__label">03 — Signet + Name (dark)</span>
+    <div class="opt3 opt3--dark">
+      <div class="opt3__box">
+        <span class="opt3__initial">N</span>
+      </div>
+      <div class="opt3__text">
+        <span class="opt3__name">Noé Giglio</span>
+        <span class="opt3__subtitle">Institutional Partnerships & Digital Assets</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option 4 -->
+  <div class="card">
+    <span class="card__label">04 — Serif Name Only</span>
+    <div class="opt4">
+      <span class="opt4__name">Noé Giglio</span>
+      <span class="opt4__subtitle">Institutional Partnerships & Digital Assets</span>
+    </div>
+  </div>
+
+  <!-- Option 5 -->
+  <div class="card">
+    <span class="card__label">05 — Oval Seal</span>
+    <div class="opt5">
+      <div class="seal">
+        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer ellipse -->
+          <ellipse cx="80" cy="80" rx="74" ry="74" stroke="#1a1917" stroke-width="0.75"/>
+          <!-- Inner ellipse -->
+          <ellipse cx="80" cy="80" rx="66" ry="66" stroke="#1a1917" stroke-width="0.35"/>
+          <!-- Center initials -->
+          <text x="80" y="92" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="300" font-size="38" fill="#1a1917" letter-spacing="2">NG</text>
+          <!-- Arc text top: NOÉ GIGLIO -->
+          <path id="topArc" d="M 18,80 A 62,62 0 0,1 142,80" fill="none"/>
+          <text font-family="Inter, sans-serif" font-weight="300" font-size="8" fill="#8c8278" letter-spacing="4">
+            <textPath href="#topArc" startOffset="50%" text-anchor="middle">NOÉ  GIGLIO</textPath>
+          </text>
+          <!-- Arc text bottom: LONDON -->
+          <path id="bottomArc" d="M 22,88 A 62,62 0 0,0 138,88" fill="none"/>
+          <text font-family="Inter, sans-serif" font-weight="300" font-size="7.5" fill="#8c8278" letter-spacing="5">
+            <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">LONDON</textPath>
+          </text>
+          <!-- Small decorative dots -->
+          <circle cx="80" cy="24" r="1.5" fill="#8c8278"/>
+          <circle cx="80" cy="136" r="1.5" fill="#8c8278"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bonus: stacked wordmark variations -->
+<p class="section-label">01 — Stacked Wordmark · size & weight variants</p>
+<div class="variants-row">
+  <!-- Variant A: compact, no subtitle -->
+  <div class="card">
+    <span class="card__label">Compact (invoice stamp)</span>
+    <div class="opt1" style="min-width:180px">
+      <span class="opt1__top" style="font-size:22px; letter-spacing:0.18em;">Noé Giglio</span>
+      <span class="opt1__rule"></span>
+      <span class="opt1__bottom" style="font-size:7px; letter-spacing:0.22em;">Institutional Partnerships</span>
+    </div>
+  </div>
+  <!-- Variant B: large -->
+  <div class="card">
+    <span class="card__label">Large (letterhead)</span>
+    <div class="opt1" style="min-width:260px">
+      <span class="opt1__top" style="font-size:44px; letter-spacing:0.24em;">Noé Giglio</span>
+      <span class="opt1__rule"></span>
+      <span class="opt1__bottom" style="font-size:11px; letter-spacing:0.3em;">Institutional Partnerships</span>
+    </div>
+  </div>
+  <!-- Variant C: italic name -->
+  <div class="card">
+    <span class="card__label">Italic name</span>
+    <div class="opt1" style="min-width:200px">
+      <span class="opt1__top" style="font-style:italic; letter-spacing:0.14em;">Noé Giglio</span>
+      <span class="opt1__rule"></span>
+      <span class="opt1__bottom">Institutional Partnerships</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

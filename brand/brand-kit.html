@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Kit — Noé Giglio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --charcoal:   #1a1917;
+    --beige:      #f7f5f2;
+    --taupe:      #8c8278;
+    --cream:      #e8e2da;
+    --sand:       #e0dbd4;
+    --white:      #ffffff;
+  }
+
+  html { font-size: 10px; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    background: var(--white);
+    color: var(--charcoal);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Page layout ── */
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 18mm 18mm 14mm;
+    background: var(--white);
+    position: relative;
+  }
+
+  @media screen {
+    body { background: #d8d4ce; padding: 20px 0 60px; }
+    .page {
+      box-shadow: 0 4px 40px rgba(0,0,0,0.14);
+      margin: 20px auto;
+    }
+    .page + .page { margin-top: 24px; }
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .page { margin: 0; box-shadow: none; page-break-after: always; }
+    .page:last-child { page-break-after: avoid; }
+  }
+
+  /* ── Typography ── */
+  .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 7px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--taupe);
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: var(--charcoal);
+    margin-bottom: 14px;
+  }
+
+  /* ── Divider ── */
+  hr {
+    border: none;
+    border-top: 0.5px solid var(--sand);
+    margin: 20px 0;
+  }
+
+  /* ════════════════════════════════
+     PAGE 1
+  ════════════════════════════════ */
+
+  /* Cover header */
+  .cover-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 48px;
+  }
+  .cover-header__title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    color: var(--charcoal);
+  }
+  .cover-header__meta {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 6px;
+  }
+  .cover-header__meta span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 7.5px;
+    letter-spacing: 0.14em;
+    color: var(--taupe);
+  }
+
+  /* Logo showcase */
+  .logo-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-bottom: 28px;
+  }
+  .logo-panel {
+    padding: 44px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .logo-panel--light { background: var(--beige); }
+  .logo-panel--dark  { background: var(--charcoal); }
+  .logo-panel .label { margin-bottom: 4px; }
+  .logo-panel--dark .label { color: #4a4743; }
+
+  /* Inline SVG logos */
+  .logo-svg {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .logo-svg__box {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .logo-svg__box--dark  { background: var(--charcoal); }
+  .logo-svg__box--light { background: var(--cream); }
+  .logo-svg__initial {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .logo-svg__initial--light { color: var(--cream); }
+  .logo-svg__initial--dark  { color: var(--charcoal); }
+  .logo-svg__name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    line-height: 1;
+  }
+  .logo-svg__name--dark  { color: var(--charcoal); }
+  .logo-svg__name--light { color: var(--cream); }
+
+  /* Clearspace diagram */
+  .clearspace-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .clearspace-wrap {
+    display: inline-flex;
+    padding: 10px;
+    border: 0.5px dashed var(--sand);
+    position: relative;
+    align-self: flex-start;
+  }
+  .clearspace-wrap--dark {
+    border-color: #2e2c2a;
+  }
+  .clearspace-label-x {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 6.5px;
+    letter-spacing: 0.12em;
+    color: var(--taupe);
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  .clearspace-label-x--dark { color: #4a4743; }
+  .clearspace-note {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 7px;
+    letter-spacing: 0.08em;
+    color: var(--taupe);
+    margin-top: 18px;
+  }
+  .clearspace-note--dark { color: #4a4743; }
+
+  /* ── Page 1 bottom: Colors + Type intro ── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 28px;
+  }
+
+  /* Color swatches */
+  .swatch-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .swatch {
+    display: flex;
+    align-items: stretch;
+    height: 48px;
+    overflow: hidden;
+  }
+  .swatch__color {
+    width: 64px;
+    flex-shrink: 0;
+  }
+  .swatch__info {
+    border: 0.5px solid var(--sand);
+    border-left: none;
+    padding: 7px 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+  }
+  .swatch__name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 7.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--charcoal);
+  }
+  .swatch__codes {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 6.5px;
+    letter-spacing: 0.08em;
+    color: var(--taupe);
+  }
+
+  /* ════════════════════════════════
+     PAGE 2
+  ════════════════════════════════ */
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  .page-header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .page-header__box {
+    width: 20px;
+    height: 20px;
+    background: var(--charcoal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-header__n {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--cream);
+    line-height: 1;
+    margin-top: 1px;
+  }
+  .page-header__name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--charcoal);
+  }
+  .page-header__right {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 7px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--taupe);
+  }
+
+  /* Typography specimens */
+  .type-section {
+    margin-bottom: 28px;
+  }
+  .type-specimen {
+    background: var(--beige);
+    padding: 28px 32px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .type-row {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    padding-bottom: 16px;
+    border-bottom: 0.5px solid var(--sand);
+  }
+  .type-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .type-meta {
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-top: 2px;
+  }
+  .type-meta__role {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 7px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--taupe);
+  }
+  .type-meta__spec {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 6.5px;
+    letter-spacing: 0.08em;
+    color: var(--taupe);
+    line-height: 1.6;
+  }
+  .type-sample { flex: 1; }
+
+  /* Usage rules */
+  .rules-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .rule-card {
+    padding: 18px 20px;
+    border: 0.5px solid var(--sand);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .rule-card--do   { border-top: 2px solid var(--charcoal); }
+  .rule-card--dont { border-top: 2px solid var(--taupe); }
+  .rule-card__tag {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 7px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--taupe);
+  }
+  .rule-card__items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .rule-card__items li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 7.5px;
+    letter-spacing: 0.06em;
+    color: var(--charcoal);
+    padding-left: 12px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .rule-card__items li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--taupe);
+  }
+
+  /* Footer */
+  .page-footer {
+    position: absolute;
+    bottom: 14mm;
+    left: 18mm;
+    right: 18mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid var(--sand);
+    padding-top: 10px;
+  }
+  .page-footer span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 7px;
+    letter-spacing: 0.14em;
+    color: var(--taupe);
+  }
+
+  /* Full-width color row for page 2 */
+  .color-full {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    margin-top: 12px;
+    overflow: hidden;
+    border: 0.5px solid var(--sand);
+  }
+  .color-chip {
+    display: flex;
+    flex-direction: column;
+  }
+  .color-chip__swatch {
+    height: 52px;
+  }
+  .color-chip__info {
+    padding: 10px 12px 12px;
+    border-right: 0.5px solid var(--sand);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .color-chip:last-child .color-chip__info { border-right: none; }
+  .color-chip__name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 7px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--charcoal);
+  }
+  .color-chip__hex {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--charcoal);
+  }
+  .color-chip__vals {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 6px;
+    letter-spacing: 0.06em;
+    color: var(--taupe);
+    line-height: 1.8;
+    margin-top: 2px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ PAGE 1 ═══════════════════ -->
+<div class="page">
+
+  <div class="cover-header">
+    <div>
+      <div class="cover-header__title">Noé Giglio<br>Brand Guidelines</div>
+    </div>
+    <div class="cover-header__meta">
+      <span>Version 1.0</span>
+      <span>April 2026</span>
+      <span>Confidential</span>
+    </div>
+  </div>
+
+  <!-- Logo showcase -->
+  <p class="label" style="margin-bottom:10px;">01 — Logo</p>
+
+  <div class="logo-showcase">
+    <!-- Light panel -->
+    <div class="logo-panel logo-panel--light">
+      <p class="label">Primary · On Light</p>
+      <div class="logo-svg">
+        <div class="logo-svg__box logo-svg__box--dark">
+          <span class="logo-svg__initial logo-svg__initial--light">N</span>
+        </div>
+        <span class="logo-svg__name logo-svg__name--dark">Noé Giglio</span>
+      </div>
+      <div class="clearspace-block">
+        <p class="label">Clearspace</p>
+        <div class="clearspace-wrap">
+          <div class="logo-svg" style="gap:14px; opacity:1;">
+            <div class="logo-svg__box logo-svg__box--dark" style="width:28px;height:28px;">
+              <span class="logo-svg__initial logo-svg__initial--light" style="font-size:16px;">N</span>
+            </div>
+            <span class="logo-svg__name logo-svg__name--dark" style="font-size:14px;">Noé Giglio</span>
+          </div>
+          <span class="clearspace-label-x">← minimum clearspace = height of signet box →</span>
+        </div>
+        <p class="clearspace-note" style="margin-top:20px;">Minimum size: 28px height (digital) · 8mm height (print)</p>
+      </div>
+    </div>
+
+    <!-- Dark panel -->
+    <div class="logo-panel logo-panel--dark">
+      <p class="label" style="color:#4a4743;">Reverse · On Dark</p>
+      <div class="logo-svg">
+        <div class="logo-svg__box logo-svg__box--light">
+          <span class="logo-svg__initial logo-svg__initial--dark">N</span>
+        </div>
+        <span class="logo-svg__name logo-svg__name--light">Noé Giglio</span>
+      </div>
+      <div class="clearspace-block">
+        <p class="label" style="color:#4a4743;">Clearspace</p>
+        <div class="clearspace-wrap clearspace-wrap--dark">
+          <div class="logo-svg" style="gap:14px;">
+            <div class="logo-svg__box logo-svg__box--light" style="width:28px;height:28px;">
+              <span class="logo-svg__initial logo-svg__initial--dark" style="font-size:16px;">N</span>
+            </div>
+            <span class="logo-svg__name logo-svg__name--light" style="font-size:14px;">Noé Giglio</span>
+          </div>
+          <span class="clearspace-label-x clearspace-label-x--dark">← minimum clearspace = height of signet box →</span>
+        </div>
+        <p class="clearspace-note clearspace-note--dark" style="margin-top:20px;">Use exclusively on #1a1917 or photography backgrounds</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colour preview (abbreviated) -->
+  <hr>
+  <p class="label" style="margin-bottom:10px;">02 — Colour Palette</p>
+
+  <div class="swatch-group">
+    <div class="swatch">
+      <div class="swatch__color" style="background:#1a1917;"></div>
+      <div class="swatch__info">
+        <span class="swatch__name">Charcoal Black · Primary</span>
+        <span class="swatch__codes">HEX #1a1917 · RGB 26, 25, 23 · CMYK 0, 4, 12, 90</span>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__color" style="background:#f7f5f2; border:0.5px solid #e0dbd4;"></div>
+      <div class="swatch__info">
+        <span class="swatch__name">Warm Beige · Background</span>
+        <span class="swatch__codes">HEX #f7f5f2 · RGB 247, 245, 242 · CMYK 0, 1, 2, 3</span>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__color" style="background:#8c8278;"></div>
+      <div class="swatch__info">
+        <span class="swatch__name">Warm Taupe · Secondary / Muted text</span>
+        <span class="swatch__codes">HEX #8c8278 · RGB 140, 130, 120 · CMYK 0, 7, 14, 45</span>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__color" style="background:#e8e2da;"></div>
+      <div class="swatch__info">
+        <span class="swatch__name">Cream · Logo reverse / Highlights</span>
+        <span class="swatch__codes">HEX #e8e2da · RGB 232, 226, 218 · CMYK 0, 3, 6, 9</span>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__color" style="background:#e0dbd4;"></div>
+      <div class="swatch__info">
+        <span class="swatch__name">Sand · Borders / Dividers</span>
+        <span class="swatch__codes">HEX #e0dbd4 · RGB 224, 219, 212 · CMYK 0, 2, 5, 12</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="page-footer">
+    <span>Noé Giglio — Brand Guidelines</span>
+    <span>Page 1 of 2</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════ PAGE 2 ═══════════════════ -->
+<div class="page">
+
+  <div class="page-header">
+    <div class="page-header__logo">
+      <div class="page-header__box">
+        <span class="page-header__n">N</span>
+      </div>
+      <span class="page-header__name">Noé Giglio</span>
+    </div>
+    <span class="page-header__right">Brand Guidelines · 2026</span>
+  </div>
+
+  <!-- Typography -->
+  <p class="label" style="margin-bottom:10px;">03 — Typography</p>
+
+  <div class="type-section">
+    <div class="type-specimen">
+
+      <div class="type-row">
+        <div class="type-meta">
+          <span class="type-meta__role">Display</span>
+          <span class="type-meta__spec">Cormorant Garamond<br>Light 300<br>Use: Names, headings,<br>invoice header</span>
+        </div>
+        <div class="type-sample">
+          <span style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:36px; letter-spacing:0.04em; color:#1a1917; line-height:1;">Noé Giglio</span>
+        </div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">
+          <span class="type-meta__role">Display Italic</span>
+          <span class="type-meta__spec">Cormorant Garamond<br>Light Italic 300<br>Use: Emphasis, quotes,<br>item descriptions</span>
+        </div>
+        <div class="type-sample">
+          <span style="font-family:'Cormorant Garamond',serif; font-weight:300; font-style:italic; font-size:28px; letter-spacing:0.02em; color:#1a1917; line-height:1;">Advisory & Digital Assets</span>
+        </div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">
+          <span class="type-meta__role">Body / UI</span>
+          <span class="type-meta__spec">Inter<br>Light 300<br>Use: Invoice lines, dates,<br>amounts, addresses</span>
+        </div>
+        <div class="type-sample" style="display:flex; flex-direction:column; gap:4px;">
+          <span style="font-family:'Inter',sans-serif; font-weight:300; font-size:14px; color:#1a1917; letter-spacing:0.02em;">Invoice · April 2026</span>
+          <span style="font-family:'Inter',sans-serif; font-weight:300; font-size:11px; color:#8c8278; letter-spacing:0.04em;">Due date: 30 April 2026 · Total: €2,400.00</span>
+        </div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">
+          <span class="type-meta__role">Labels / Caps</span>
+          <span class="type-meta__spec">Inter<br>Light 300 · Uppercase<br>Letter-spacing: 0.18em<br>Use: Section headers,<br>table headings</span>
+        </div>
+        <div class="type-sample" style="display:flex; flex-direction:column; gap:6px;">
+          <span style="font-family:'Inter',sans-serif; font-weight:300; font-size:8px; letter-spacing:0.2em; text-transform:uppercase; color:#8c8278;">Description · Quantity · Unit Price · Total</span>
+          <span style="font-family:'Inter',sans-serif; font-weight:300; font-size:8px; letter-spacing:0.2em; text-transform:uppercase; color:#1a1917;">Bill To · Invoice No · Date Issued</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:10px; padding:12px 16px; border:0.5px solid var(--sand); background:var(--beige);">
+      <p style="font-family:'Inter',sans-serif; font-weight:300; font-size:7px; letter-spacing:0.12em; color:var(--taupe); line-height:1.8;">
+        Both fonts are available free via <span style="color:var(--charcoal);">Google Fonts</span> (fonts.google.com).
+        Download Cormorant Garamond and Inter and install locally before using in Word, Pages, or any invoice tool.
+        Always use weight 300 (Light) — never Bold or Regular — to maintain brand consistency.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Full colour chips -->
+  <p class="label" style="margin-bottom:10px;">04 — Colour Reference</p>
+
+  <div class="color-full">
+    <div class="color-chip">
+      <div class="color-chip__swatch" style="background:#1a1917;"></div>
+      <div class="color-chip__info">
+        <span class="color-chip__name">Charcoal Black</span>
+        <span class="color-chip__hex">#1a1917</span>
+        <span class="color-chip__vals">RGB 26 · 25 · 23<br>CMYK 0 · 4 · 12 · 90</span>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-chip__swatch" style="background:#f7f5f2; border-bottom:0.5px solid #e0dbd4;"></div>
+      <div class="color-chip__info">
+        <span class="color-chip__name">Warm Beige</span>
+        <span class="color-chip__hex">#f7f5f2</span>
+        <span class="color-chip__vals">RGB 247 · 245 · 242<br>CMYK 0 · 1 · 2 · 3</span>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-chip__swatch" style="background:#8c8278;"></div>
+      <div class="color-chip__info">
+        <span class="color-chip__name">Warm Taupe</span>
+        <span class="color-chip__hex">#8c8278</span>
+        <span class="color-chip__vals">RGB 140 · 130 · 120<br>CMYK 0 · 7 · 14 · 45</span>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-chip__swatch" style="background:#e8e2da;"></div>
+      <div class="color-chip__info">
+        <span class="color-chip__name">Cream</span>
+        <span class="color-chip__hex">#e8e2da</span>
+        <span class="color-chip__vals">RGB 232 · 226 · 218<br>CMYK 0 · 3 · 6 · 9</span>
+      </div>
+    </div>
+    <div class="color-chip">
+      <div class="color-chip__swatch" style="background:#e0dbd4;"></div>
+      <div class="color-chip__info">
+        <span class="color-chip__name">Sand</span>
+        <span class="color-chip__hex">#e0dbd4</span>
+        <span class="color-chip__vals">RGB 224 · 219 · 212<br>CMYK 0 · 2 · 5 · 12</span>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Usage rules -->
+  <p class="label" style="margin-bottom:10px;">05 — Usage Rules</p>
+
+  <div class="rules-grid">
+    <div class="rule-card rule-card--do">
+      <span class="rule-card__tag">Do</span>
+      <ul class="rule-card__items">
+        <li>Use the primary logo on warm beige or white backgrounds</li>
+        <li>Use the reverse logo exclusively on #1a1917 dark backgrounds</li>
+        <li>Maintain minimum clearspace equal to the signet box height on all sides</li>
+        <li>Use only Cormorant Garamond and Inter at weight 300</li>
+        <li>Print in full colour or true black (not grey) only</li>
+      </ul>
+    </div>
+    <div class="rule-card rule-card--dont">
+      <span class="rule-card__tag">Don't</span>
+      <ul class="rule-card__items">
+        <li>Do not stretch, skew, or rotate the logo</li>
+        <li>Do not change any colour in the logo</li>
+        <li>Do not place the primary logo on coloured or photographic backgrounds</li>
+        <li>Do not use the logo below the minimum size</li>
+        <li>Do not add drop shadows, outlines, or effects</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="page-footer">
+    <span>Noé Giglio — Brand Guidelines</span>
+    <span>Page 2 of 2</span>
+  </div>
+
+</div>
+
+</body>
+</html>
